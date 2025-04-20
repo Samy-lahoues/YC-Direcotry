@@ -1,9 +1,71 @@
-# YC Directory
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# YC Directory - Startup Ecosystem Platform
 
-## Getting Started
+🚀 **YC Directory** is a modern web platform that empowers entrepreneurs to pitch their startups and connect with like-minded founders in the startup ecosystem.
 
-First, run the development server:
+## ✨ Features
+
+- **Startup Pitches** – Showcase your startup to potential collaborators and investors
+
+- **Entrepreneur Network** – Connect with founders in your industry
+
+- **Modern UI** – Built with a clean, responsive design
+
+- **CMS-Powered** – Easy content management with Sanity.io
+
+- **Performance Optimized** – Fast-loading Next.js application
+
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 15 (App Router)
+
+- **CMS**: Sanity.io (Headless Content Management)
+
+- **UI Components**: shadcn/ui (Radix + TailwindCSS)
+
+- **Styling**: TailwindCSS
+
+- **Error Monitoring**: Sentry
+
+- **Form Validation**: Zod
+
+- **Slug Generation**: `sluggify`
+
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/yc-directory.git
+cd yc-directory
+```
+
+### 2. Install Dependencies
+```
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+### 3. Set Up Environment Variables
+
+Create a `.env.local` file and add:
+```env
+AUTH_SECRET=your_sanity_project_id
+AUTH_GITHUB_ID=
+AUTH_GITHUB_SECRET=
+NEXTAUTH_URL=your_sentry_dsn=
+NEXT_PUBLIC_SANITY_PROJECT_ID=
+NEXT_PUBLIC_SANITY_DATASET=
+NEXT_PUBLIC_SANITY_API_VERSION=
+SANITY_WRITE_TOKEN=
+SENTRY_AUTH_TOKEN=
+```
+
+
+### 4. Run the Development Server
 
 ```bash
 npm run dev
@@ -11,27 +73,46 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open [http://localhost:3000](http://localhost:3000/) in your browser.
 
-## Learn More
+## 📦 Scripts
 
-To learn more about Next.js, take a look at the following resources:
+- `dev` – Start development server
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `build` – Build for production
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `start` – Run production build
 
-## Deploy on Vercel
+- `lint` – Check for code errors
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `sanity:studio` – Launch Sanity Studio
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## 📂 Project Structure
+
+Copy
+
+Download
+
+.
+├── app/               # Next.js App Router
+├── components/        # Reusable UI components (shadcn)
+├── lib/               # Utilities (Sanity client, helpers)
+├── schemas/           # Sanity CMS schemas
+└── public/            # Static assets
+
+## 📝 License
+
+MIT
+
+---
+
+💡 **Need help?** Open an issue or contribute to make YC Directory better!
+
+🔗 **Live Demo**: [https://yc-directory.vercel.app](https://yc-directory.vercel.app/) (example)
+
+Let’s build the future of startups together! 🚀
